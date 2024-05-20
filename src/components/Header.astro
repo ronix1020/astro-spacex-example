@@ -1,0 +1,69 @@
+---
+import HeaderButton from "./HeaderButton.astro";
+---
+
+<header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
+  <div class="mx-auto text-center mb-8 lg:mb-16">
+    <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white">
+      SpaceX launches
+    </h2>
+    <p class="font-light text-gray-300 sm:text-xl dark:text-gray-400">
+      A list of all SpaceX launches
+    </p>
+  </div>
+  <nav
+    class="flex flex-col items-center justify-between w-full
+    text-center md:flex-row"
+  >
+    <HeaderButton class="text-white" href="/">
+      <svg
+        slot="before"
+        width="34"
+        class="ionicon"
+        viewBox="0 0 512 512"
+        ><path
+          d="M461.81 53.81a4.4 4.4 0 00-3.3-3.39c-54.38-13.3-180 34.09-248.13 102.17a294.9 294.9 0 00-33.09 39.08c-21-1.9-42-.3-59.88 7.5-50.49 22.2-65.18 80.18-69.28 105.07a9 9 0 009.8 10.4l81.07-8.9a180.29 180.29 0 001.1 18.3 18.15 18.15 0 005.3 11.09l31.39 31.39a18.15 18.15 0 0011.1 5.3 179.91 179.91 0 0018.19 1.1l-8.89 81a9 9 0 0010.39 9.79c24.9-4 83-18.69 105.07-69.17 7.8-17.9 9.4-38.79 7.6-59.69a293.91 293.91 0 0039.19-33.09c68.38-68 115.47-190.86 102.37-247.95zM298.66 213.67a42.7 42.7 0 1160.38 0 42.65 42.65 0 01-60.38 0z"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="32"></path><path
+          d="M109.64 352a45.06 45.06 0 00-26.35 12.84C65.67 382.52 64 448 64 448s65.52-1.67 83.15-19.31A44.73 44.73 0 00160 402.32"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="32"></path></svg
+      >
+      Ultimos lanzamientos
+    </HeaderButton>
+    <HeaderButton class="text-white" href="/oldest">
+      Los mas viejos
+    </HeaderButton>
+    <HeaderButton class="text-white" href="/oldest">
+      <svg slot="before" class="ionicon" viewBox="0 0 512 512" width="34"
+        ><path
+          d="M248 64C146.39 64 64 146.39 64 248s82.39 184 184 184 184-82.39 184-184S349.61 64 248 64z"
+          fill="none"
+          stroke="currentColor"
+          stroke-miterlimit="10"
+          stroke-width="32"></path><path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="32"
+          d="M220 220h32v116"></path><path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-miterlimit="10"
+          stroke-width="32"
+          d="M208 340h88"></path><path
+          d="M248 130a26 26 0 1026 26 26 26 0 00-26-26z"></path></svg
+      >
+
+      Acerca de
+    </HeaderButton>
+  </nav>
+</header>
