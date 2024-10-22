@@ -1,6 +1,6 @@
 ---
 import CardLaunch from "./../components/CardLaunch.astro"
-import { APISpaceXResponse } from "../types/api"
+import { type APISpaceXResponse } from "../types/api"
 
 // podemos ejecutar javascript aqui 
 const res = await fetch('https://api.spacexdata.com/v5/launches/query', {
@@ -28,7 +28,7 @@ const { docs: launches } = await res.json() as APISpaceXResponse
                 id={id}
                 name={name}
                 date={date_utc}
-                img={links[0].patch.small}
+                img={links.patch.small}
                 details={details}
                 flightNumber={flight_number}
                 success={success}
